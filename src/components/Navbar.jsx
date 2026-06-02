@@ -10,20 +10,20 @@ const Navbar = () => {
     }
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-end items-center px-4 m-0 bg-[#0a192f] text-gray-300'>
+        <div className='fixed w-full h-[80px] flex justify-end items-center m-0 bg-[#0a192f] text-gray-300'>
             {/* main menu */}
 
             <ul className='hidden md:flex'>
-                <li>
+                <li className='hover:text-pink-600 hover:border-b-2 hover:border-pink-600'>
                     <a href="#home"> Home </a>
                 </li>
-                <li>
+                <li className='hover:text-pink-600 hover:border-b-2 hover:border-pink-600 ml-2'>
                     <a href="#experience"> Experience </a>
                 </li>
-                <li>
+                <li className='hover:text-pink-600 hover:border-b-2 hover:border-pink-600 ml-2'>
                     <a href="#projects"> Projects </a>
                 </li>
-                <li>
+                <li className='hover:text-pink-600 hover:border-b-2 hover:border-pink-600 ml-2'>
                     <a href="#contact"> Contact </a>
                 </li>
             </ul>
@@ -33,15 +33,12 @@ const Navbar = () => {
             </div>
 
             {/* phone menu */}
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
+            <ul className={!nav ? 'hidden' : 'absolute left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
                 <li className='py-6 text-4xl'>
                     <a href="#home"> Home </a>
                 </li>
                 <li className='py-6 text-4xl'>
                     <a href="#experience"> Experience </a>
-                </li>
-                <li className='py-6 text-4xl'>
-                    <a href="#skills"> Skills </a>
                 </li>
                 <li className='py-6 text-4xl'>
                     <a href="#projects"> Projects </a>
@@ -51,7 +48,7 @@ const Navbar = () => {
                 </li>
             </ul>
 
-            <div className='hidden lg:flex flex-col fixed top-[35%] left-0'>
+            <div className='hidden lg:flex flex-col fixed top-[45%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
                         <a className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/in/jaideep-kular/" target='_blank' rel="noopener noreferrer">
